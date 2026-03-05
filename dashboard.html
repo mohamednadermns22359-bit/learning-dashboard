@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>laerndashbord</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <header>
+        <h2>LEARN DASHBOARD</h2>
+        <a class="account" href="#">
+            <i class="fas fa-user"></i>
+            <p>account</p>
+        </a>
+    </header>
+    <!-- side bar -->
+    <div class="content">
+        <ul class="side-bar">
+            <li>
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <p>dashboard</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#courses">
+                    <i class="fas fa-book-open"></i>
+                    <p>courses</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects">
+                    <i class="fas fa-layer-group"></i>
+                    <p> UI projetct</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#progress">
+                    <i class="fas fa-chart-line"></i>
+                    <p>progress</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-gear"></i>
+                    <p>setting</p>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="main-continer">
+            <!-- complete -->
+
+            <div class="complete">
+
+                <h3>welcome,new coder</h3>
+
+                <div class="progress">
+                    <div class="continer">
+                        <div class="progess-bar"></div>
+                    </div>
+                    <p>75%complete</p>
+                </div>
+
+            </div>
+
+
+            <!-- cards -->
+            <div class="cards">
+
+                <div class="date">
+                    <div class="box">
+                        <i class="fas fa-book" id="user-icon"></i>
+                        <p class="user">courses</p>
+                        <span>3</span>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <div class="box">
+                        <i class="fas fa-file-code" id="user-icon"></i>
+                        <p class="user">projects</p>
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <div class="box">
+                        <i class="fas fa-chart-line" id="user-icon"></i>
+                        <p class="user">complete</p>
+                        <span>75%</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- cuorses progress -->
+            <div class="courses-progress">
+                <div class="check">
+
+                    <h3>courses progress</h3>
+                    <p>Recent Active</p>
+                    <div class="continer">
+                        <div class="progess-bar-courses" id="progressBar"></div>
+                    </div>
+
+                    <input type="checkbox" id="python" class="course-check">
+                    <label for="#html">python basics</label>
+                    <br>
+                    <input type="checkbox" id="html" class="course-check">
+                    <label for="#html">html basics</label>
+                    <br>
+                    <input type="checkbox" id="css" class="course-check">
+                    <label for="#html">css basics</label>
+                    <br>
+                    <input type="checkbox" id="js" class="course-check" >
+                    <label for="#html">Javascript basics</label>
+                </div>
+
+
+                <!-- teps -->
+                <div class="teps">
+                    <h3>tips for you</h3>
+                    <ul class="tep">
+                        <li>always search</li>
+                        <li>make aprojects</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="courses" id="courses">
+                <h3>my courses</h3>
+                <div class="grid">
+                    <div class="course">1</div>
+                    <div class="course">2</div>
+                    <div class="course">3</div>
+                    <div class="course">4</div>
+                    <div class="course">5</div>
+                    <div class="course">6</div>
+                    <div class="course">7</div>
+                    <div class="course">8</div>
+                    <div class="course">9</div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                
+                <h3>UI projects for training</h3>
+                
+                <div class="project1"></div>
+               
+                <div class="grid">
+                    <div class="project" id="project"><img src="learn-dashbaord.png"></div>
+                </div>
+            
+            </section>
+
+            <section class="progress-courses-bars">
+                <h2>progress</h2>
+                <div class="html-progress"><h3>html progress</h3></div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+        <script src="main-dash.js"></script>
+</body>
+
+</html>

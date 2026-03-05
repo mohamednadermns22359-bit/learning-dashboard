@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(202, 202, 202);
+}
+
+/* nav bar start*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+/* nav bar end */
+
+/* side bar start */
+.side-bar{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    min-height: 100vh;
+    border-right: rgb(209, 209, 209) solid 1px;
+    border-top: rgb(209, 209, 209) solid 1px;
+    position: fixed;
+    margin-top: 70px;
+}
+
+.side-bar li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-left: 15px;    
+}
+
+.side-bar li a:hover{
+    background-color: rgb(98, 140, 255);
+    color: rgb(243, 243, 243);
+}
+
+.side-bar li a i {
+    font-size: 25px;
+}
+
+.side-bar li a  p {
+    font-size: 18px;
+}
+/* side bar end */
+
+/* welcome and progress */
+.content{
+    display: flex;
+}
+
+.complete{
+    background-color: rgb(255, 255, 255);
+    width: 97%;
+    height: 100px;
+    margin-top: 20px; 
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(73, 73, 73);
+}
+
+.complete h3{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+
+.complete p{
+    margin-bottom: 10px;
+}
+
+.main-continer{
+    margin-left:240px;
+    margin-top: 80px;
+}
+
+.continer{
+    background-color:#e0e0e0;
+    width: 75%;
+    height: 10px;
+    margin-bottom: 6px;
+    border-radius: 20px;
+}
+
+.progess-bar{
+    background-color:rgb(255, 83, 52);
+    height: 10px;
+    width: 75%;
+    border-radius: 20px;
+}
+
+/* cards */
+.box{
+    background-color:rgb(5, 3, 39);
+    min-width: 200px;
+    height: 100px;
+    padding:20px 15px ;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+}
+
+#user-icon{
+    font-size: 40px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-basis: 200;
+}
+
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* courses check */
+.check{
+    background-color:white;
+    height: 260px;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+}
+
+input[type="checkbox"]{
+    accent-color:rgb(255, 83, 52);
+}
+
+#html,#css,#python,#js{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.courses-progress{
+    display: flex;
+    gap: 20px;
+}
+
+.check p, h3{
+margin-bottom: 10px;
+}
+
+.progess-bar-courses{
+    width: 1%;
+    height: 100%;
+    background-color: rgb(255, 83, 52);
+    border-radius: 10px;
+    transition:0.3s ease-in;
+}
+/* teps */
+.teps{
+    background-color: white;
+    height: 120px;
+    width: 40%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+}
+
+.tep{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.tep li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.courses{
+    background:rgba(255,255, 255, 0.4);
+    height:85vh;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border-radius: 20px;
+    scroll-margin-top: 90px;
+    box-shadow: 5px 5px 5px 5px rgb(129, 129, 129);
+}
+
+.courses h3{
+    margin-left:35%;
+    font-size: 30px;
+}
+
+.courses .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+}
+
+.course{
+    background-color:rgb(5, 3, 39);
+    height: 100px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.course:hover{
+    transform: scale(1.1);
+    background-color: rgb(8, 6, 54);
+}
+
+.projects{
+    background:rgba(255, 255,255,0.4);
+    height: 85vh;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    scroll-margin-top: 80px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(129, 129, 129);
+
+}
+
+.projects h3{
+    margin-left:28%;
+    font-size: 30px;
+}
+
+.projects .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+}
+
+.project{
+    width: 200px;
+    height: 150px;
+    background: black;
+    cursor: pointer;
+}
+
+.fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.progress-courses-bars{
+    background:rgba(255, 255, 255, 0.4) ;
+    height: 88vh;
+    padding: 20px;
+    border-radius:20px;
+}
+
+
+.progress-courses-bars h2{
+    margin-left:35%;
+    font-size: 40px;
+}
+
+.html-progress{
+    margin-left: 10px;
+    background-color: white;
+    width:90%;
+    height: 135px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(107, 107, 107);
+}
